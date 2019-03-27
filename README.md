@@ -1,2 +1,2 @@
-# pocketpantry
+# PocketPantry
 OzHarvest Pocket Pantry
