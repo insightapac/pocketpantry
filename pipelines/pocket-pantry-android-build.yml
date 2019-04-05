@@ -4,20 +4,22 @@ trigger:
 - master
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'vs2017-win2016'
 
 steps:
 
-- script: sudo npm install -g ionic
+- script: npm install -g ionic
   displayName: 'Install Ionic'
 
-- script: sudo npm install -g cordova
+- script: npm install -g cordova
   displayName: 'Install Cordova'
 
 - script: npm install src/Client
   displayName: 'npm install'
 
-- script: cd src/Client && ionic cordova build android
+- script: | 
+    cd src/Client
+    ionic cordova build android
   displayName: 'Ionic Android Build'
 
 - task: PublishBuildArtifacts@1
