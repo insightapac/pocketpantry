@@ -6,7 +6,7 @@ provider "azuread" {
 }
 data "azurerm_client_config" "current" {}
 module "resource-group" {
-  source                  = "../../modules/resource-group"
+  source                  = "../modules/resource-group"
   resource-group_name     = "${local.solution-short-name-lower}"
   resource-group_location = "${var.primary_region}"
   resource-group_tags = {
