@@ -18,6 +18,7 @@ steps:
   displayName: 'npm install'
 
 - script: | 
+    (if not exist "%USERPROFILE%/.gradle" mkdir "%USERPROFILE%/.gradle") && (echo. >> "%USERPROFILE%/.gradle/gradle.properties" && echo org.gradle.daemon=false >> "%USERPROFILE%/.gradle/gradle.properties")
     cd src/Client
     ionic cordova build android --prod --release
   displayName: 'Ionic Android Build'
