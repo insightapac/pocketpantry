@@ -1,0 +1,66 @@
+# CI pipeline to test and build the Voce software silo deployment assets.
+
+trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+steps:
+
+- task: ShellScript@2
+  displayName: 'Install latest Terraform version'
+  inputs:
+    scriptPath: scripts/getTerraform.sh
+
+- task: AzureCLI@1
+  displayName: 'terraform init - Framework'
+  inputs:
+    azureSubscription: 'veli-msdn'
+    scriptLocation: scriptPath
+    scriptPath: scripts/buildTerraformInit.sh
+    workingDirectory: terraform/infrastructure/framework
+    addSpnToEnvironment: true
+    failOnStandardError: true
+
+- task: AzureCLI@1
+  displayName: 'terraform validate - Framework'
+  inputs:
+    azureSubscription: 'veli-msdn'
+    scriptLocation: scriptPath
+    scriptPath: scripts/buildTerraformValidate.sh
+    workingDirectory: terraform/infrastructure/framework
+    addSpnToEnvironment: true
+    failOnStandardError: true
+
+- task: Bash@3
+  displayName: 'Clean Terraform assets - Framework'
+  inputs:
+      targetType: 'filePath'
+      filePath: scripts/cleanFolder.sh
+      workingDirectory: terraform/infrastructure/framework
+      failOnStderr: true
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: scripts'
+  inputs:
+    publishLocation: Container
+    PathtoPublish: scripts
+    ArtifactName: 'scripts'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: infrastructure'
+  inputs:
+    publishLocation: Container
+    PathtoPublish: terraform/infrastructure
+    ArtifactName: 'infrastructure'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: modules'
+  inputs:
+    publishLocation: Container
+    PathtoPublish: terraform/modules
+    ArtifactName: 'modules'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
