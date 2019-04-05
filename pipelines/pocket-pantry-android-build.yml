@@ -17,6 +17,9 @@ steps:
 - script: npm install src/Client
   displayName: 'npm install'
 
+- script: '(if not exist "%USERPROFILE%/.gradle" mkdir "%USERPROFILE%/.gradle") && (echo. >> "%USERPROFILE%/.gradle/gradle.properties" && echo org.gradle.daemon=false >> "%USERPROFILE%/.gradle/gradle.properties")'
+  displayName: 'Disable Gradle Daemon'
+
 - script: | 
     cd src/Client
     ionic cordova build android --prod --release
