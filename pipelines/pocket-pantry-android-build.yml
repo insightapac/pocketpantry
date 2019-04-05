@@ -17,7 +17,7 @@ steps:
 - script: sudo npm install src/Client
   displayName: 'npm install'
 
-- script: cd src/Client && ionic cordova build android
+- script: cd src/Client && sudo ionic cordova build android
   displayName: 'Ionic Android Build'
 
 - task: PublishBuildArtifacts@1
