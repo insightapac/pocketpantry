@@ -13,7 +13,7 @@ steps:
   inputs:
     command: custom
     verbose: false
-    customCommand: npm install -g ionic
+    customCommand: install -g ionic
 
 - task: Npm@1
   displayName: 'npm install'
