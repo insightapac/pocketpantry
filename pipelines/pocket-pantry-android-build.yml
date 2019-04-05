@@ -9,7 +9,10 @@ pool:
 steps:
 
 - script: sudo npm install -g ionic
-  displayName: 'Install Ionic CLI'
+  displayName: 'Install Ionic'
+
+- script: sudo npm install -g cordova
+  displayName: 'Install Cordova'
 
 - script: sudo npm install src/Client
   displayName: 'npm install'
