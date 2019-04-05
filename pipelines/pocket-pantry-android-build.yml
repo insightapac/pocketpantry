@@ -8,12 +8,8 @@ pool:
 
 steps:
 
-- task: Npm@1
-  displayName: 'Install Ionic CLI'
-  inputs:
-    command: custom
-    verbose: false
-    customCommand: install -g ionic
+- script: sudo npm install -g ionic
+  displayName: 'Ionic Android Build'
 
 - task: Npm@1
   displayName: 'npm install'
