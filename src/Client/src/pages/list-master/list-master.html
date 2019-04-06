@@ -13,7 +13,39 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-grid>
+    <ion-row align-items-center>
+      <ion-col col-5 col-sm-3>
+        <div>
+          <button ion-button>
+            <ion-icon name="add"></ion-icon>
+          </button>
+        </div>
+      </ion-col >
+      <ion-col col-5 col-sm-3>
+        <div>
+          <button ion-button icon-only (click)="addItem()">
+            <ion-icon name="add"></ion-icon>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-5 col-sm-3>
+        <div>
+          <button ion-button icon-only (click)="addItem()">
+            <ion-icon name="add"></ion-icon>
+          </button>
+        </div>
+      </ion-col>
+        <ion-col col-5 col-sm-3>
+          <div>
+            <button ion-button icon-only (click)="addItem()">
+              <ion-icon name="add"></ion-icon>
+            </button>
+          </div>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems">
       <button ion-item (click)="openItem(item)">

@@ -19,7 +19,7 @@ steps:
     azureSubscription: 'veli-msdn'
     scriptLocation: scriptPath
     scriptPath: scripts/buildTerraformInit.sh
-    workingDirectory: terraform/infrastructure/framework
+    workingDirectory: infrastructure/pocketpantry
     addSpnToEnvironment: true
     failOnStandardError: true
 
@@ -29,7 +29,7 @@ steps:
     azureSubscription: 'veli-msdn'
     scriptLocation: scriptPath
     scriptPath: scripts/buildTerraformValidate.sh
-    workingDirectory: terraform/infrastructure/framework
+    workingDirectory: infrastructure/pocketpantry
     addSpnToEnvironment: true
     failOnStandardError: true
 
@@ -38,7 +38,7 @@ steps:
   inputs:
       targetType: 'filePath'
       filePath: scripts/cleanFolder.sh
-      workingDirectory: terraform/infrastructure/framework
+      workingDirectory: infrastructure/pocketpantry
       failOnStderr: true
 
 - task: PublishBuildArtifacts@1
@@ -53,7 +53,7 @@ steps:
   displayName: 'Publish Artifact: infrastructure'
   inputs:
     publishLocation: Container
-    PathtoPublish: terraform/infrastructure
+    PathtoPublish: infrastructure/pocketpantry
     ArtifactName: 'infrastructure'
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
@@ -61,6 +61,6 @@ steps:
   displayName: 'Publish Artifact: modules'
   inputs:
     publishLocation: Container
-    PathtoPublish: terraform/modules
+    PathtoPublish: infrastructure/modules
     ArtifactName: 'modules'
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
