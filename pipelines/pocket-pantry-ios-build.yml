@@ -14,8 +14,10 @@ steps:
 - script: npm install -g cordova
   displayName: 'Install Cordova'
 
-- script: npm install src/Client
-  displayName: 'npm install'
+- script: | 
+    cd src/Client
+    npm install
+  displayName: 'Command: npm install'
 
 - script: | 
     cd src/Client
