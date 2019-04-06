@@ -1,0 +1,14 @@
+C:\dev\repos\pocketpantry\src\services\shopping\obj\Debug\netcoreapp2.1\shopping.csprojAssemblyReference.cache
+C:\dev\repos\pocketpantry\src\services\shopping\obj\Debug\netcoreapp2.1\shopping.csproj.CoreCompileInputs.cache
+C:\dev\repos\pocketpantry\src\services\shopping\obj\Debug\netcoreapp2.1\shopping.RazorAssemblyInfo.cache
+C:\dev\repos\pocketpantry\src\services\shopping\obj\Debug\netcoreapp2.1\shopping.RazorAssemblyInfo.cs
+C:\dev\repos\pocketpantry\src\services\shopping\obj\Debug\netcoreapp2.1\shopping.AssemblyInfoInputs.cache
+C:\dev\repos\pocketpantry\src\services\shopping\obj\Debug\netcoreapp2.1\shopping.AssemblyInfo.cs
+C:\dev\repos\pocketpantry\src\services\shopping\bin\Debug\netcoreapp2.1\shopping.deps.json
+C:\dev\repos\pocketpantry\src\services\shopping\bin\Debug\netcoreapp2.1\shopping.runtimeconfig.json
+C:\dev\repos\pocketpantry\src\services\shopping\bin\Debug\netcoreapp2.1\shopping.runtimeconfig.dev.json
+C:\dev\repos\pocketpantry\src\services\shopping\bin\Debug\netcoreapp2.1\shopping.dll
+C:\dev\repos\pocketpantry\src\services\shopping\bin\Debug\netcoreapp2.1\shopping.pdb
+C:\dev\repos\pocketpantry\src\services\shopping\obj\Debug\netcoreapp2.1\shopping.RazorTargetAssemblyInfo.cache
+C:\dev\repos\pocketpantry\src\services\shopping\obj\Debug\netcoreapp2.1\shopping.dll
+C:\dev\repos\pocketpantry\src\services\shopping\obj\Debug\netcoreapp2.1\shopping.pdb
