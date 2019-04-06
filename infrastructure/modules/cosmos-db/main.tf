@@ -14,7 +14,7 @@ resource "azurerm_cosmosdb_account" "cosmosdb" {
   }
 
   geo_location {
-    prefix            = "${azurerm_cosmosdb_account.cosmosdb.name}-primary"
+    prefix            = "${var.cosmosdb_account_name}-primary"
     location          = "${var.cosmosdb_account_location}"
     failover_priority = 0
   }
