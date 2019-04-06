@@ -22,7 +22,7 @@ steps:
 
 - script: | 
     cd src/Client
-    ionic cordova build android --prod --release
+    ionic cordova build android --prod
   displayName: 'Ionic Android Build'
 
 - task: CopyFiles@2
