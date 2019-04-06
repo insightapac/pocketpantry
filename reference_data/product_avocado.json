@@ -1,0 +1,57 @@
+{
+  "_id": "ObjectId(\"5ca7ebcad59b290e00e35fea\")",
+  "product_id": "4138d22e315b4ea3aa9591c8fa28dfda",
+  "object_type": "product",
+  "product_name": "Hass Avocado",
+  "product_parent": "Avocado",
+  "product_category": {
+    "id": 13,
+    "name": "Fruits & Vegetables"
+  },
+  "general_tips": [
+    {
+      "weighting": 100,
+      "description": "Watch out for squishy spots"
+    },
+    {
+      "weighting": 80,
+      "description": "Watch out for black spots"
+    }
+  ],
+  "storage_locations": [
+    {
+      "storage_location": "Fridge",
+      "average_life": {
+        "number": 1,
+        "unit": "Weeks"
+      },
+      "preference": {
+        "name": "Primary",
+        "rank": 1
+      },
+      "storage_instructions": [
+        {
+          "sequence": 1,
+          "description": "Place in fridge"
+        }
+      ]
+    },
+    {
+      "storage_location": "Room",
+      "average_life": {
+        "number": 4,
+        "unit": "Days"
+      },
+      "preference": {
+        "name": "Secondary",
+        "rank": 2
+      },
+      "storage_instructions": [
+        {
+          "sequence": 1,
+          "description": "Place in fruit bowl"
+        }
+      ]
+    }
+  ]
+}

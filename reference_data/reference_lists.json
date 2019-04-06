@@ -1,0 +1,116 @@
+{
+	"_id": "ObjectId(\"5ca7e6dd8f678e0f504c6e48\")",
+	"object_type": "reference_lists",
+	"categories": [
+		{
+			"id": 1,
+			"name": "Baby"
+		},
+		{
+			"id": 2,
+			"name": "Beer, Wine & Spirits"
+		},
+		{
+			"id": 3,
+			"name": "Beverages"
+		},
+		{
+			"id": 4,
+			"name": "Bread & Bakery"
+		},
+		{
+			"id": 5,
+			"name": "Breakfast & Cereal"
+		},
+		{
+			"id": 6,
+			"name": "Canned Goods & Soups"
+		},
+		{
+			"id": 7,
+			"name": "Condiments/Spices & Bake"
+		},
+		{
+			"id": 8,
+			"name": "Cookies, Snacks & Candy"
+		},
+		{
+			"id": 9,
+			"name": "Dairy, Eggs & Cheese"
+		},
+		{
+			"id": 10,
+			"name": "Deli & Signature Cafe"
+		},
+		{
+			"id": 11,
+			"name": "Flowers"
+		},
+		{
+			"id": 12,
+			"name": "Frozen Foods"
+		},
+		{
+			"id": 13,
+			"name": "Fruits & Vegetables"
+		},
+		{
+			"id": 14,
+			"name": "Grains, Pasta & Sides"
+		},
+		{
+			"id": 15,
+			"name": "International Cuisine"
+		},
+		{
+			"id": 16,
+			"name": "Meat & Seafood"
+		},
+		{
+			"id": 17,
+			"name": "Miscellaneous"
+		},
+		{
+			"id": 18,
+			"name": "Paper Products"
+		},
+		{
+			"id": 19,
+			"name": "Cleaning Supplies"
+		},
+		{
+			"id": 20,
+			"name": "Health & Beauty, Personal Care & Pharmacy"
+		},
+		{
+			"id": 21,
+			"name": "Pet Care"
+		},
+		{
+			"id": 22,
+			"name": "Tobacco"
+		}
+	],
+	"units": [
+		{
+			"id": 1,
+			"long_name": "Kilograms",
+			"short_name": "Kg"
+		},
+		{
+			"id": 2,
+			"long_name": "Grams",
+			"short_name": "g"
+		},
+		{
+			"id": 3,
+			"long_name": "Litres",
+			"short_name": "L"
+		},
+		{
+			"id": 4,
+			"long_name": "Millilitre",
+			"short_name": "ml"
+		}
+	]
+}
