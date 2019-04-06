@@ -6,11 +6,11 @@ trigger:
     - master
   paths:
     include:
-      - src/client/*
+      - src/client
       - pipelines/pocket-pantry-android-build.yml
     exclude:
-      - infrastructure/*
-      - scripts/*
+      - infrastructure
+      - scripts
 
 pool:
   vmImage: 'macOS-10.13'
