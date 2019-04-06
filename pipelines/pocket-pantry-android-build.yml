@@ -4,7 +4,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'vs2017-win2016'
+  vmImage: 'macOS-10.13'
 
 steps:
 
@@ -14,15 +14,14 @@ steps:
 - script: npm install -g cordova
   displayName: 'Install Cordova'
 
-- script: npm install src/Client
-  displayName: 'npm install'
-
-- script: '(if not exist "%USERPROFILE%/.gradle" mkdir "%USERPROFILE%/.gradle") && (echo. >> "%USERPROFILE%/.gradle/gradle.properties" && echo org.gradle.daemon=false >> "%USERPROFILE%/.gradle/gradle.properties")'
-  displayName: 'Disable Gradle Daemon'
+- script: | 
+    cd src/Client
+    npm install
+  displayName: 'Command: npm install'
 
 - script: | 
     cd src/Client
-    ionic cordova build android --prod
+    ionic cordova build android --prod --release
   displayName: 'Ionic Android Build'
 
 - task: CopyFiles@2
