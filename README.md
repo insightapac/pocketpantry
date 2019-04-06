@@ -1,4 +1,9 @@
 # PocketPantry
 OzHarvest Pocket Pantry
 
-[![Build Status](https://dev.azure.com/OllieFlavel/PocketPantry/_apis/build/status/Insight-PocketPantry-CI?branchName=master)](https://dev.azure.com/OllieFlavel/PocketPantry/_build/latest?definitionId=1&branchName=master)
+
+
+| Pipeline      | Status    |
+| ------------- | --------- |
+| PocketPantry-Android-CI | [![Build Status](https://dev.azure.com/OllieFlavel/PocketPantry/_apis/build/status/pocket-pantry-android-build?branchName=master)](https://dev.azure.com/OllieFlavel/PocketPantry/_build/latest?definitionId=1&branchName=master) |
+| pocket-pantry-scaffold | [![Build Status](https://dev.azure.com/OllieFlavel/PocketPantry/_apis/build/status/pocket-pantry-scaffold?branchName=master)](https://dev.azure.com/OllieFlavel/PocketPantry/_build/latest?definitionId=2&branchName=master) |
