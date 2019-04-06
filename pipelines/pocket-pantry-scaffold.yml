@@ -6,11 +6,11 @@ trigger:
     - master
   paths:
     include:
-      - infrastructure/*
-      - scripts/*
+      - infrastructure
+      - scripts
       - pipelines/pocket-pantry-scaffold.yml
     exclude:
-      - src/*
+      - src
 
 pool:
   vmImage: 'Ubuntu-16.04'
