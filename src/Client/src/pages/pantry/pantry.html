@@ -6,10 +6,15 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>pantry</ion-title>
+    <ion-title color="primary">Pantry</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <h1 ion-text color="primary">Pantry</h1>
+  <p>DIRECT WAYS TO ADD ITEMS</p>
+  <button ion-button ion-button icon-end large (click)="uploadReceipt()">
+    <ion-icon name="cloud-upload"></ion-icon> UPLOAD A SHOPPING RECEIPT
+  </button>
+  <img [src]="currentImage" *ngIf="currentImage">
 </ion-content>
