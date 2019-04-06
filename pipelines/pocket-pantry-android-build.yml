@@ -1,7 +1,16 @@
 # Pocket Pantry Android Client Build
 
 trigger:
-- master
+  branches:
+    include:
+    - master
+  paths:
+    include:
+      - src/client/*
+      - pipelines/pocket-pantry-android-build.yml
+    exclude:
+      - infrastructure/*
+      - scripts/*
 
 pool:
   vmImage: 'macOS-10.13'

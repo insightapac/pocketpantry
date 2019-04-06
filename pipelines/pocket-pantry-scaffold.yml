@@ -1,7 +1,16 @@
 # CI pipeline to test and build the Voce software silo deployment assets.
 
 trigger:
-- master
+  branches:
+    include:
+    - master
+  paths:
+    include:
+      - infrastructure/*
+      - scripts/*
+      - pipelines/pocket-pantry-scaffold.yml
+    exclude:
+      - src/*
 
 pool:
   vmImage: 'Ubuntu-16.04'

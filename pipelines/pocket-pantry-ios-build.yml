@@ -1,7 +1,16 @@
 # Pocket Pantry iOS Client Build
 
 trigger:
-- master
+  branches:
+    include:
+    - master
+  paths:
+    include:
+      - src/client/*
+      - pipelines/pocket-pantry-ios-build.yml
+    exclude:
+      - infrastructure/*
+      - scripts/*
 
 pool:
   vmImage: 'macOS-10.13'
