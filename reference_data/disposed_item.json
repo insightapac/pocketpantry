@@ -1,0 +1,17 @@
+{
+  "_id": "ObjectId(\"5ca81468d59b290e00e35ff3\")",
+  "object_type": "disposed_item",
+  "pantry_id": "1e68dbd79aac4b31af0d81ad18107621",
+  "postcode": 2100,
+  "product": {
+    "id": "4138d22e315b4ea3aa9591c8fa28dfda",
+    "product_name": "Hass Avocado",
+    "product_parent": "Avocado"
+  },
+  "units": {
+    "number": 1,
+    "unit": "Unit"
+  },
+  "notes": "Went all mushy.",
+  "date": "15/04/2019"
+}
