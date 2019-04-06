@@ -1,0 +1,35 @@
+{
+  "_id": "ObjectId(\"5ca7f918d59b290e00e35fec\")",
+  "object_type": "pantry_item",
+  "pantry_id": "1e68dbd79aac4b31af0d81ad18107621",
+  "postcode": 2100,
+  "product": {
+    "id": "7411d2fdcf4648d694af9130ea11562f",
+    "product_name": "Granny Smith Apple",
+    "product_parent": "Apple"
+  },
+  "units": {
+    "number": 4,
+    "unit": "Unit"
+  },
+  "recommended_storage_location": {
+    "storage_location": "Fridge",
+    "average_life": {
+      "number": 2,
+      "unit": "Weeks"
+    },
+    "preference": {
+      "name": "Secondary",
+      "rank": 2
+    },
+    "general_tips": "Lasts for ages",
+    "storage_instructions": [
+      {
+        "sequence": 1,
+        "description": "Place in fridge"
+      }
+    ]
+  },
+  "added": "14/04/2019",
+  "expiry": "28/04/2019"
+}

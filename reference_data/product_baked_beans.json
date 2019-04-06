@@ -1,0 +1,37 @@
+{
+  "_id": "ObjectId(\"5ca7f082d59b290e00e35feb\")",
+  "product_id": "aa57bd838f6240fc9fbb5308d8240b3d",
+  "object_type": "product",
+  "producer": "Heins",
+  "product_name": "Baked Beans",
+  "product_parent": "Beans",
+  "product_category": {
+    "id": 6,
+    "name": "Canned Goods & Soups"
+  },
+  "general_tips": [
+    {
+      "weighting": 100,
+      "description": "May make you gasy."
+    }
+  ],
+  "storage_locations": [
+    {
+      "average_life": {
+        "number": 10,
+        "unit": "Years"
+      },
+      "storage_location": "Pantry",
+      "preference": {
+        "name": "Primary",
+        "rank": 1
+      },
+      "storage_instructions": [
+        {
+          "sequence": 1,
+          "description": "Place in pantry"
+        }
+      ]
+    }
+  ]
+}

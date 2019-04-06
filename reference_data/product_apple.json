@@ -1,0 +1,63 @@
+{
+  "_id": "ObjectId(\"5ca7ee758f678e0f504c6e49\")",
+  "product_id": "7411d2fdcf4648d694af9130ea11562f",
+  "object_type": "product",
+  "product_name": "Granny Smith Apple",
+  "product_parent": "Apple",
+  "product_category": {
+    "id": 13,
+    "name": "Fruits & Vegetables"
+  },
+  "general_tips": [
+    {
+      "weighting": 100,
+      "description": "Watch our for brown spots"
+    },
+    {
+      "weighting": 80,
+      "description": "Watch our for brown spots"
+    }
+  ],
+  "storage_locations": [
+    {
+      "storage_location": "Room",
+      "average_life": {
+        "number": 10,
+        "unit": "Days"
+      },
+      "preference": {
+        "name": "Primary",
+        "rank": 1
+      },
+      "hany_tip": [
+        {
+          "description": "Keep away from ripe banannas."
+        }
+      ],
+      "storage_instructions": [
+        {
+          "sequence": 1,
+          "description": "Place in fruit bowl"
+        }
+      ]
+    },
+    {
+      "storage_location": "Fridge",
+      "average_life": {
+        "number": 2,
+        "unit": "Weeks"
+      },
+      "preference": {
+        "name": "Secondary",
+        "rank": 2
+      },
+      "general_tips": "Lasts for ages",
+      "storage_instructions": [
+        {
+          "sequence": 1,
+          "description": "Place in fridge"
+        }
+      ]
+    }
+  ]
+}
