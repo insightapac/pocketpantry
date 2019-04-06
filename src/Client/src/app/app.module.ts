@@ -8,10 +8,13 @@ import { IonicStorageModule, Storage } from '@ionic/storage';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+
 
 import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
+import { ReferenceDataProvider } from '../providers/reference-data/reference-data';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -62,9 +65,11 @@ export function provideSettings(storage: Storage) {
     Camera,
     SplashScreen,
     StatusBar,
+    BarcodeScanner,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    ReferenceDataProvider
   ]
 })
 export class AppModule { }
