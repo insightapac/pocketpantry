@@ -1,7 +1,0 @@
-{
-  "name": "pocketpantry",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
