@@ -1,10 +1,11 @@
 # PocketPantry
-OzHarvest Pocket Pantry
+OzHarvest Pocket Pantry solution.
 
+# Repositories
 
+The PocketPantry solution is comprised of multiple components (Azure Infrastructure, Microservices Mobile Client). You can find all PocketPantry repos in the following locations:
 
-| Pipeline      | Status    |
-| ------------- | --------- |
-| PocketPantry-Android-CI | [![Build Status](https://dev.azure.com/OllieFlavel/PocketPantry/_apis/build/status/pocket-pantry-android-build?branchName=master)](https://dev.azure.com/OllieFlavel/PocketPantry/_build/latest?definitionId=1&branchName=master) |
-| PocketPantry-iOS-CI | [![Build Status](https://dev.azure.com/OllieFlavel/PocketPantry/_apis/build/status/PocketPantry-iOS-CI?branchName=master)](https://dev.azure.com/OllieFlavel/PocketPantry/_build/latest?definitionId=3&branchName=master) |
-| pocket-pantry-scaffold | [![Build Status](https://dev.azure.com/OllieFlavel/PocketPantry/_apis/build/status/pocket-pantry-scaffold?branchName=master)](https://dev.azure.com/OllieFlavel/PocketPantry/_build/latest?definitionId=2&branchName=master) |
+- [Pocket Pantry](https://github.com/insightapac/pocketpantry)
+- [Infrastructure](https://github.com/insightapac/pocketpantry-infra)
+- [Microservices](https://github.com/insightapac/pocketpantry-microservices)
+- [Mobile Client](https://github.com/insightapac/pocketpantry-mobile)
