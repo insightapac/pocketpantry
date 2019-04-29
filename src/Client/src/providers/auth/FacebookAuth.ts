@@ -16,8 +16,12 @@ export class FacebookAuth implements IAuth {
   constructor(private facebook: Facebook, private storage: Storage, private platform: Platform,) { }
 
   async login() : Promise<IAuthUser> {
-    FB.init();
-    
+    FB.init({
+      appId      : 391315068389926,
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+
     //the permissions your facebook app needs from the user
     const permissions = ["public_profile", "email"];
 
