@@ -2,7 +2,7 @@
 //export const FirstRunPage = 'TutorialPage';
 
 //skip auth for now
-export const FirstRunPage = 'SignupPage';
+export const FirstRunPage = 'LoginPage';
 
 
 // The main page the user will see as they use the app over a long period of time.

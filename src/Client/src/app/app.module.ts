@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Camera } from '@ionic-native/camera';
@@ -15,6 +15,9 @@ import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
 import { ReferenceDataProvider } from '../providers/reference-data/reference-data';
+import { TokenInterceptor } from '../interceptors/token.interceptor';
+import { Facebook } from '@ionic-native/facebook';
+import { FacebookAuth } from '../providers/auth/FacebookAuth';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -66,7 +69,11 @@ export function provideSettings(storage: Storage) {
     SplashScreen,
     StatusBar,
     BarcodeScanner,
+    Facebook,
+    FacebookAuth,
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true},
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
+    // { provide: FacebookAuth, useFactory: provideSettings, deps: [Storage, Facebook] },
     // Keep this to enable Ionic's runtime error handling during development
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     ReferenceDataProvider
